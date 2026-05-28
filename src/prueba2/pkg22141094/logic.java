@@ -47,5 +47,20 @@ public class logic {
     }
     
     
+    public void contarPorTipo(File dir){
+        File[] contenido = dir.listFiles();
+        
+        if(contenido==null) return;
+        
+        for (File item : contenido) {
+            if(item.isDirectory()){
+                contarPorTipo(item);
+            }else if(item.isFile()){
+            }
+            
+        }
+    }
+    
+    
     
 }
