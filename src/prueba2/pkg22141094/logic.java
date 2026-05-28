@@ -31,4 +31,10 @@ public class logic {
     public File getFile(){
         return file;
     }
+    
+    
+    public boolean isValid(){
+        if(file==null)return false;
+        return file.exists()&&file.isDirectory();
+    }
 }
