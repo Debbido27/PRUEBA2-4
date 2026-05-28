@@ -37,4 +37,15 @@ public class logic {
         if(file==null)return false;
         return file.exists()&&file.isDirectory();
     }
+    
+    public void limpiar(){
+        txtCount =0;
+        javaCount=0;
+        pdfCount=0;
+        otherCount=0;
+        resultados.clear();
+    }
+    
+    
+    
 }
