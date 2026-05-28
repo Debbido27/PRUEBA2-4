@@ -56,9 +56,28 @@ public class logic {
             if(item.isDirectory()){
                 contarPorTipo(item);
             }else if(item.isFile()){
+                clasificar(item.getName());
             }
             
         }
+        
+        public void clasificar(String nombre){
+            String ext = getExtension(nombre);
+            switch(ext){
+                case "txt":
+                    txtCount++;
+                    break;
+                    
+                case "java":
+                    javaCount++;
+                    break;
+                    
+                case "pdf":
+                    pdfCount++;
+                    break;
+            }
+        }
+        
     }
     
     
