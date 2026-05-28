@@ -60,6 +60,7 @@ public class logic {
             }
             
         }
+    }
         
         public void clasificar(String nombre){
             String ext = getExtension(nombre);
@@ -78,8 +79,12 @@ public class logic {
             }
         }
         
+        private String getExtension(String nombre{
+         
+        }
+        
     }
     
     
     
-}
+
